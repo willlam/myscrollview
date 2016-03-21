@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIImageView *image;
-@property (nonatomic, strong) UIView *rootView;
+@property (nonatomic, strong) MyScrollView *rootView;
 
 @end
 
@@ -29,7 +29,7 @@
 //	[self.view addSubview:self.view0];
 	
 	
-	self.rootView = [[UIView alloc] initWithFrame:self.view.frame];
+	self.rootView = [[MyScrollView alloc] initWithFrame:self.view.frame];
 	
 	[self.view addSubview:self.rootView];
 
@@ -68,10 +68,8 @@
 	[self.rootView addSubview:yellow];
 }
 
-- (void) preparePanGesture {
-	
-	[self.rootView]
-}
+
+
 
 
 
